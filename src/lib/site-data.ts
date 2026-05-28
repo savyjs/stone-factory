@@ -63,8 +63,8 @@ export const products: Array<{
 }> = [
   {
     key: "wood-travertine",
-    image: "/photo/2/torshab.jpg",
-    gallery: ["/photo/2/torshab.jpg", "/photo/3/sku-4567.jpg", "/photo/3/sange-21345.jpg"],
+    image: "/photo/2/darpoosh.jpg",
+    gallery: ["/photo/2/darpoosh.jpg", "/photo/3/sku-4567.jpg", "/photo/3/sange-21345.jpg"],
     stoneFamily: "Wood-grain Travertine",
     application: "Facade, exterior wall, and flooring",
   },
@@ -91,8 +91,8 @@ export const products: Array<{
   },
   {
     key: "cnc-roman-facade",
-    image: "/photo/2/darpoosh.jpg",
-    gallery: ["/photo/2/darpoosh.jpg", "/photo/3/haji abad.jpg", "/photo/1/IMG_3334.JPG"],
+    image: "/photo/2/torshab.jpg",
+    gallery: ["/photo/2/torshab.jpg", "/photo/3/haji abad.jpg", "/photo/1/IMG_3334.JPG"],
     stoneFamily: "CNC Roman facade",
     application: "Architectural facade projects",
   },

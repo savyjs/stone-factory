@@ -123,7 +123,7 @@ export const en = createDictionary({
       tags: ["CNC", "Roman facade", "custom design"],
     },
     "wood-travertine": {
-      name: "Wood-grain travertine (طرح چوب)",
+      name: "Wood-grain travertine",
       summary: "Our primary stone — affordable, versatile, and in strong supply. Natural wood-like texture ideal for facades, exterior walls, and flooring at a competitive price.",
       tags: ["primary stone", "affordable", "export ready", "facade"],
     },
@@ -280,9 +280,9 @@ export const en = createDictionary({
   faq: {
     title: "Common questions",
     items: [
-      { q: "What is wood-grain travertine and why is it your primary stone?", a: "Wood-grain travertine (طرح چوب) is our most cost-effective and versatile stone. It features a natural wood-like surface texture and is available in large quantities for facades, walls, and flooring — at a competitive price with export-ready quality." },
+      { q: "What is wood-grain travertine and why is it your primary stone?", a: "Wood-grain travertine is our most cost-effective and versatile stone. It features a natural wood-like surface texture and is available in large quantities for facades, walls, and flooring — at a competitive price with export-ready quality." },
       { q: "Do you export slabs and wood-grain travertine in bulk?", a: "Yes. We currently have strong stock of slabs and wood-grain travertine ready for large export orders. We can handle dedicated production runs and bulk shipments. Contact us on WhatsApp for an offer." },
-      { q: "Do you accept barter (تهاتر) arrangements?", a: "Yes. We accept orders through barter in addition to standard purchases. All sizes, quality grades, and dedicated production volumes are available. Send a WhatsApp message to discuss." },
+      { q: "Do you accept barter arrangements?", a: "Yes. We accept orders through barter in addition to standard purchases. All sizes, quality grades, and dedicated production volumes are available. Send a WhatsApp message to discuss." },
       { q: "How do I place an order?", a: "The fastest way is to send a WhatsApp message with your project details, required quantity, and destination. We respond quickly and can arrange samples, pricing, and shipment coordination." },
       { q: "What sizes and finishes can you produce?", a: "We produce all standard and custom sizes across multiple finishes — facade slabs, flooring tiles, stair treads, cap stones, and CNC Roman pieces. Dedicated production runs for specific projects are available." },
     ],

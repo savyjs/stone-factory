@@ -34,7 +34,6 @@ export default async function ContactPage({ params }: PageProps) {
         <div className="surface-card rounded-[1.9rem] p-8">
           <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[var(--primary)]">{dictionary.labels.marketAccess}</p>
           <h1 className="font-display mt-4 text-5xl font-semibold text-[var(--foreground)]">{dictionary.navigation.contact}</h1>
-          <p className="mt-5 max-w-4xl text-lg leading-8 text-[var(--muted)]">{dictionary.sections.contactText}</p>
         </div>
       </section>
       <ContactPanel locale={locale} dictionary={dictionary} />

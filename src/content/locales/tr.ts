@@ -127,7 +127,7 @@ export const tr = createDictionary({
     items: [
       { q: "Ahşap desenli traverten nedir ve neden birincil taşınız?", a: "Ahşap desenli traverten en uygun maliyetli ve çok yönlü taşımızdır. Doğal ahşap kıvamlı yüzeyiyle cephe, duvar ve zemin için rekabetçi fiyatla büyük miktarda mevcuttur ve ihracata hazırdır." },
       { q: "Levha ve ahşap desenli traverteni toplu olarak ihracat ediyor musunuz?", a: "Evet. Halihazırda büyük ihracat siparişleri için güçlü stoğumuz var. Özel üretim ve toplu sevkiyat yapılır. Teklif için WhatsApp yazın." },
-      { q: "Takas (تهاتر) düzenlemeleri kabul ediyor musunuz?", a: "Evet. Normal alışverişe ek olarak takas siparişleri de kabul ediyoruz. Tüm boyut, kalite ve özel üretim hacimleri müzakereye açıktır. WhatsApp yazın." },
+      { q: "Takas düzenlemeleri kabul ediyor musunuz?", a: "Evet. Normal alışverişe ek olarak takas siparişleri de kabul ediyoruz. Tüm boyut, kalite ve özel üretim hacimleri müzakereye açıktır. WhatsApp yazın." },
       { q: "Nasıl sipariş verebilirim?", a: "En hızlı yol, proje detaylarınız, gerekli miktar ve teslimat adresiyle WhatsApp mesajı göndermektir. Hızlı yanıt veririz ve numune, fiyatlandırma ve nakliye koordinasyonu sağlarız." },
       { q: "Hangi boyut ve yüzey işlemlerini üretebilirsiniz?", a: "Tüm standart ve özel ölçüler, birden fazla yüzey işlemi ve kalite dereceleri mümkündür. Cephe levhaları, zemin karosu, merdiven basamakları ve CNC parçaları özel üretimde mevcuttur." },
     ],

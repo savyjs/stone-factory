@@ -127,7 +127,7 @@ export const az = createDictionary({
     items: [
       { q: "Ağac naxışlı travertin nədir və niyə sizin əsas daşınızdır?", a: "Ağac naxışlı travertin bizim ən sərfəli daşımızdır. Fasad, divar və döşəmə üçün rəqabətli qiymətlə böyük miqdarda mövcuddur və ixracata hazırdır." },
       { q: "Lövhə və ağac naxışlı travertain toplu ixrac edirsiniz?", a: "Bəli. Hal-hazırda böyük ixrac sifarişləri üçün güclü ehtiyatımız var. Xüsusi istehsal və toplu göndəriş mümkündür. Təklif almaq üçün WhatsApp yazın." },
-      { q: "Barter (تهاتر) sifarişləri qəbul edirsinizmi?", a: "Bəli. Standart alış-verişlə yanaşı barter sifarişlərini də qəbul edirik. Bütün ölçülər, keyfiyyət dərəcələri və xüsusi istehsal mümkündür. WhatsApp yazın." },
+      { q: "Barter sifarişləri qəbul edirsinizmi?", a: "Bəli. Standart alış-verişlə yanaşı barter sifarişlərini də qəbul edirik. Bütün ölçülər, keyfiyyət dərəcələri və xüsusi istehsal mümkündür. WhatsApp yazın." },
       { q: "Sifarişi necə verə bilərəm?", a: "Ən sürətli yol layihə təfsilatlarınızla WhatsApp mesajı göndərməkdir. Tez cavab veririk, nümunə, qiymət və göndəriş koordinasiyası quruluq." },
       { q: "Hansı ölçü və emal növlərini istehsal edirsiniz?", a: "Bütün standart və xüsusi ölçülər, çoxsaylı emal növləri və keyfiyyət dərəcələri mümkündür. Fasad lövhəsi, döşəmə, pilləkən, örtük daşı və CNC hissələri xüsusi istehsalda mövcuddur." },
     ],

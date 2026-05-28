@@ -127,7 +127,7 @@ export const tk = createDictionary({
     items: [
       { q: "Agaç nagyşly trawertin näme we ol näme üçin esasy daşyňyz?", a: "Agaç nagyşly trawertin bizin iň arzan we köp ulanylýan daşymyz. Fasad, diwar we pöwriş üçin tebigy agaç dokumasy bilen uly möçberde elýeter we ixrata taýyn." },
       { q: "Lövheleri we agaç nagyşly trawertini köpçülikleýin eksport edýärsiňizmi?", a: "Hawa. Häzirki wagtda uly eksport sargytlary üçin güýçli ätiýaçlygymyz bar. Ýörite önümçilik we köpçülikleýin ugratmak mümkin. Teklip almak üçin WhatsApp habar iberiň." },
-      { q: "Barter (تهاتر) sazlaşyklaryny kabul edýärsiňizmi?", a: "Hawa. Adaty satyn almaga goşmaça barter sargytlaryny hem kabul edýäris. Ähli ölçegler, hil derejesi we ýörite önümçilik gepleşilip bilner. WhatsApp habar iberiň." },
+      { q: "Barter sazlaşyklaryny kabul edýärsiňizmi?", a: "Hawa. Adaty satyn almaga goşmaça barter sargytlaryny hem kabul edýäris. Ähli ölçegler, hil derejesi we ýörite önümçilik gepleşilip bilner. WhatsApp habar iberiň." },
       { q: "Nädip sargyt berip bilerin?", a: "Iň çalt ýol taslama maglumatlaryňyz, gerekli möçber we ugratmak ýeri bilen WhatsApp habar ibermekdir. Çalt jogap berýäris we nusga, baha we ugratmak koordinasiýasyny gurnaýarys." },
       { q: "Haýsy ölçegler we ýüzey bejerigleri öndürip bilersiňiz?", a: "Ähli standart we ýörite ölçegler, birnäçe bejeriş we hil derejeleri mümkin. Fasad lövhesi, pöwriş keramikaňy, basgançak we CNC bölekleri ýörite önümçilikde elýeterli." },
     ],

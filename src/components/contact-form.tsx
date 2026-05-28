@@ -42,6 +42,15 @@ export function ContactForm({ locale }: ContactFormProps) {
 
       setValues(initialState);
       setStatus("success");
+
+      if (typeof window !== "undefined") {
+        (window as Window & { dataLayer?: unknown[] }).dataLayer =
+          (window as Window & { dataLayer?: unknown[] }).dataLayer ?? [];
+        (window as Window & { dataLayer?: unknown[] }).dataLayer!.push({
+          event: "contact_form_submitted",
+          locale,
+        });
+      }
     } catch {
       setStatus("error");
     }

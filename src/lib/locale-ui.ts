@@ -18,6 +18,8 @@ type LocaleUi = {
   baleLabel: string;
   eitaaLabel: string;
   barterNote: string;
+  shareLabel: string;
+  inquireLabel: string;
   formTitle: string;
   formText: string;
   nameLabel: string;
@@ -57,6 +59,8 @@ const localeUi: Record<Locale, LocaleUi> = {
     baleLabel: "Bale",
     eitaaLabel: "Eitaa",
     barterNote: "We accept barter orders, large dedicated production, and bulk export. Send a WhatsApp message to discuss.",
+    shareLabel: "Share",
+    inquireLabel: "Inquire about this stone",
     formTitle: "Ask for price and stone advice",
     formText: "Send your project details and get a reply by email or Telegram when those channels are set up.",
     nameLabel: "Name",
@@ -94,6 +98,8 @@ const localeUi: Record<Locale, LocaleUi> = {
     baleLabel: "بله",
     eitaaLabel: "ایتا",
     barterNote: "سفارش تهاتری، تولید اختصاصی در هر حجم و ارسال انبوه را می پذیریم. برای هماهنگی پیام واتساپ بدهید.",
+    shareLabel: "اشتراک‌گذاری",
+    inquireLabel: "استعلام قیمت",
     formTitle: "قیمت و مشاوره سنگ را بگیرید",
     formText: "جزئیات پروژه را بفرستید و پاسخ را از طریق ایمیل یا تلگرام دریافت کنید.",
     nameLabel: "نام",
@@ -131,6 +137,8 @@ const localeUi: Record<Locale, LocaleUi> = {
     baleLabel: "بله",
     eitaaLabel: "ایتا",
     barterNote: "نقبل الطلبات بالمقايضة والإنتاج المخصص والتصدير بالجملة. أرسل رسالة واتساب للتواصل.",
+    shareLabel: "مشاركة",
+    inquireLabel: "استفسر عن هذا الحجر",
     formTitle: "اطلب السعر واستشارة الحجر",
     formText: "أرسل تفاصيل المشروع إلى المصنع. يمكن تسليم الرسالة إلى البريد الإلكتروني وتلغرام عند ضبط متغيرات البيئة.",
     nameLabel: "الاسم",
@@ -168,6 +176,8 @@ const localeUi: Record<Locale, LocaleUi> = {
     baleLabel: "Bale",
     eitaaLabel: "Eitaa",
     barterNote: "Barter sifarişlər, böyük xüsusi istehsal və topdan ixrac qəbul edilir. Ətraflı müzakirə üçün WhatsApp yazın.",
+    shareLabel: "Paylaş",
+    inquireLabel: "Bu daş haqqında soruşun",
     formTitle: "Qiymət və daş məsləhəti istəyin",
     formText: "Layihə məlumatını zavoda göndərin. Mühit dəyişənləri qurulduqda sorğu e-poçt və Telegram-a yönləndirilə bilər.",
     nameLabel: "Ad",
@@ -205,6 +215,8 @@ const localeUi: Record<Locale, LocaleUi> = {
     baleLabel: "Bale",
     eitaaLabel: "Eitaa",
     barterNote: "Takas siparişleri, büyük özel üretim ve toplu ihracat kabul edilir. Görüşmek için WhatsApp yazın.",
+    shareLabel: "Paylaş",
+    inquireLabel: "Bu taş hakkında soru sor",
     formTitle: "Fiyat ve taş danışmanlığı isteyin",
     formText: "Proje detaylarını fabrikaya gönderin. Ortam değişkenleri ayarlanırsa mesaj e-posta ve Telegram'a iletilebilir.",
     nameLabel: "Ad",
@@ -242,6 +254,8 @@ const localeUi: Record<Locale, LocaleUi> = {
     baleLabel: "Bale",
     eitaaLabel: "Eitaa",
     barterNote: "Ընդունում ենք բարտեր-պատվերներ, խոշոր հատուկ արտադրություն և բուլ ​​արտահանում: Քննարկելու համար WhatsApp-ով գրեք:",
+    shareLabel: "Կիսվել",
+    inquireLabel: "Հարցրեք այս քարի մասին",
     formTitle: "Հարցրեք գին և քարի խորհրդատվություն",
     formText: "Ուղարկեք նախագծի տվյալները գործարան։ Միջավայրի փոփոխականները կարգավորելու դեպքում հարցումը կարող է հասնել էլ. փոստին և Telegram-ին։",
     nameLabel: "Անուն",
@@ -279,6 +293,8 @@ const localeUi: Record<Locale, LocaleUi> = {
     baleLabel: "بیل",
     eitaaLabel: "ایتا",
     barterNote: "ہم بارٹر آرڈرز، بڑی مخصوص پیداوار اور بلک ایکسپورٹ قبول کرتے ہیں۔ واٹس ایپ پر میسج کریں۔",
+    shareLabel: "شیئر کریں",
+    inquireLabel: "اس پتھر کے بارے میں پوچھیں",
     formTitle: "قیمت اور اسٹون مشاورت کی درخواست",
     formText: "پروجیکٹ کی تفصیل فیکٹری کو بھیجیں۔ اگر ماحول متغیرات سیٹ ہوں تو پیغام ای میل اور ٹیلیگرام پر بھیجا جا سکتا ہے۔",
     nameLabel: "نام",
@@ -316,6 +332,8 @@ const localeUi: Record<Locale, LocaleUi> = {
     baleLabel: "Bale",
     eitaaLabel: "Eitaa",
     barterNote: "Barter sargydy, uly öndürişi we köpçülikleýin eksporty kabul edýäris. Maslahatlaşmak üçin WhatsApp habar iberiň.",
+    shareLabel: "Paýlaş",
+    inquireLabel: "Bu daş hakynda soraň",
     formTitle: "Baha we daş maslahaty üçin ýüzlenme",
     formText: "Taslama maglumatyny zawoda iberiň. Daşky gurşaw üýtgeýjileri sazlananda ýüzlenme e-poçta we Telegram-a ýetirilip bilner.",
     nameLabel: "Ady",

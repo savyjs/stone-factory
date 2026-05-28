@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { ContactForm } from "@/components/contact-form";
+import { ShareButton } from "@/components/share-button";
 import { getBlogPostContent } from "@/content";
 import type { LocaleDictionary } from "@/content/types";
 import type { Locale } from "@/lib/i18n";
@@ -76,6 +77,8 @@ export function HeroSection({ locale, dictionary }: { locale: Locale; dictionary
 
 export function ProductGrid({ locale, dictionary, limit }: { locale: Locale; dictionary: LocaleDictionary; limit?: number }) {
   const visible = typeof limit === "number" ? products.slice(0, limit) : products;
+  const copy = getLocaleUi(locale);
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "";
 
   return (
     <section className="section-anchor mx-auto mt-20 w-full max-w-7xl px-4 lg:px-8">
@@ -107,6 +110,22 @@ export function ProductGrid({ locale, dictionary, limit }: { locale: Locale; dic
                   ))}
                 </div>
                 <p className="mt-4 text-xs uppercase tracking-[0.18em] text-[var(--muted)]">{product.application}</p>
+                <div className="mt-4 flex flex-wrap gap-2">
+                  <a
+                    href={`https://wa.me/989376953800?text=${encodeURIComponent(`${copy.inquireLabel}: ${content.name}`)}`}
+                    target="_blank"
+                    rel="noreferrer"
+                    data-testid="inquire-cta"
+                    className="rounded-full bg-[var(--primary)] px-4 py-2 text-xs font-semibold text-white transition hover:bg-[var(--secondary)]"
+                  >
+                    {copy.inquireLabel}
+                  </a>
+                  <ShareButton
+                    url={`${siteUrl}/${locale}/products#${product.key}`}
+                    title={content.name}
+                    label={copy.shareLabel}
+                  />
+                </div>
               </div>
             </article>
           );
@@ -125,6 +144,8 @@ export function ProductGrid({ locale, dictionary, limit }: { locale: Locale; dic
 
 export function GalleryGrid({ locale, dictionary, limit }: { locale: Locale; dictionary: LocaleDictionary; limit?: number }) {
   const visible = typeof limit === "number" ? galleryImages.slice(0, limit) : galleryImages;
+  const copy = getLocaleUi(locale);
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "";
 
   return (
     <section className="section-anchor mx-auto mt-20 w-full max-w-7xl px-4 lg:px-8">
@@ -134,6 +155,13 @@ export function GalleryGrid({ locale, dictionary, limit }: { locale: Locale; dic
           <div key={image} className="surface-card overflow-hidden rounded-[1.5rem]">
             <div className="relative h-64 overflow-hidden">
               <Image src={image} alt={dictionary.sections.galleryTitle} fill className="stone-image object-cover" sizes="(max-width: 768px) 100vw, 25vw" />
+            </div>
+            <div className="flex justify-end p-2">
+              <ShareButton
+                url={`${siteUrl}/${locale}/gallery`}
+                title={dictionary.sections.galleryTitle}
+                label={copy.shareLabel}
+              />
             </div>
           </div>
         ))}
@@ -181,6 +209,8 @@ export function PremiumAssurancePanel({ locale }: { locale: Locale }) {
 
 export function BlogGrid({ locale, dictionary, limit }: { locale: Locale; dictionary: LocaleDictionary; limit?: number }) {
   const visible = typeof limit === "number" ? blogPosts.slice(0, limit) : blogPosts;
+  const copy = getLocaleUi(locale);
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "";
 
   return (
     <section className="section-anchor mx-auto mt-20 w-full max-w-7xl px-4 lg:px-8">
@@ -200,9 +230,16 @@ export function BlogGrid({ locale, dictionary, limit }: { locale: Locale; dictio
                 </div>
                 <h3 className="mt-3 text-2xl font-semibold text-[var(--foreground)]">{content.title}</h3>
                 <p className="mt-3 text-sm leading-7 text-[var(--muted)]">{content.excerpt}</p>
-                <Link href={`/${locale}/blog/${post.slug}`} className="mt-5 inline-flex rounded-full bg-[var(--primary)] px-4 py-2 text-sm font-semibold text-white transition hover:bg-[var(--secondary)]">
-                  {dictionary.labels.readMore}
-                </Link>
+                <div className="mt-5 flex flex-wrap items-center gap-3">
+                  <Link href={`/${locale}/blog/${post.slug}`} className="inline-flex rounded-full bg-[var(--primary)] px-4 py-2 text-sm font-semibold text-white transition hover:bg-[var(--secondary)]">
+                    {dictionary.labels.readMore}
+                  </Link>
+                  <ShareButton
+                    url={`${siteUrl}/${locale}/blog/${post.slug}`}
+                    title={content.title}
+                    label={copy.shareLabel}
+                  />
+                </div>
               </div>
             </article>
           );
@@ -264,7 +301,7 @@ export function ContactPanel({ locale, dictionary }: { locale: Locale; dictionar
         <div className="surface-card flex flex-col gap-5 rounded-[1.75rem] p-7">
           <div>
             <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[var(--primary)]">{dictionary.labels.guaranteed}</p>
-            <h3 className="mt-2 text-2xl font-semibold text-[var(--foreground)]">{companyInfo.name}</h3>
+            <h3 className="mt-2 text-2xl font-semibold text-[var(--foreground)]">{dictionary.meta.siteName}</h3>
             <p className="mt-1 text-sm text-[var(--muted)]">{companyInfo.city}, {companyInfo.country}</p>
           </div>
           <div className="grid gap-3">
