@@ -40,3 +40,7 @@ pnpm-lock.*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+.idea/modules.xml
+.idea/stone-factory.iml
+.idea/vcs.xml
+.idea/inspectionProfiles/Project_Default.xml
